@@ -1,0 +1,44 @@
+{
+  "name": "Exercise",
+  "type": "object",
+  "properties": {
+    "workout_id": {
+      "type": "string",
+      "description": "ID of the workout"
+    },
+    "name": {
+      "type": "string",
+      "description": "Exercise name"
+    },
+    "sets": {
+      "type": "number",
+      "description": "Prescribed number of sets"
+    },
+    "reps": {
+      "type": "number",
+      "description": "Prescribed number of reps"
+    },
+    "rest_time": {
+      "type": "number",
+      "description": "Rest time in seconds"
+    },
+    "media_url": {
+      "type": "string",
+      "description": "Instructional video or photo URL"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Exercise-specific notes"
+    },
+    "order": {
+      "type": "number",
+      "description": "Order of exercise in workout"
+    }
+  },
+  "required": [
+    "workout_id",
+    "name",
+    "sets",
+    "reps"
+  ]
+}

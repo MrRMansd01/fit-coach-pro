@@ -1,0 +1,32 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "coach_id": {
+      "type": "string",
+      "description": "ID of the coach being reviewed"
+    },
+    "client_id": {
+      "type": "string",
+      "description": "ID of the client who wrote the review"
+    },
+    "program_id": {
+      "type": "string",
+      "description": "ID of the completed program"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Rating from 1-5"
+    },
+    "comment": {
+      "type": "string",
+      "description": "Review text"
+    }
+  },
+  "required": [
+    "coach_id",
+    "client_id",
+    "program_id",
+    "rating"
+  ]
+}

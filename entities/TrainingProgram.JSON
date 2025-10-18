@@ -1,0 +1,68 @@
+{
+  "name": "TrainingProgram",
+  "type": "object",
+  "properties": {
+    "coach_id": {
+      "type": "string",
+      "description": "ID of the coach"
+    },
+    "client_id": {
+      "type": "string",
+      "description": "ID of the client"
+    },
+    "name": {
+      "type": "string",
+      "description": "Program name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Program description"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Program start date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Program end date"
+    },
+    "price": {
+      "type": "number",
+      "description": "Program price in USD"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "active",
+        "completed",
+        "cancelled"
+      ],
+      "default": "pending",
+      "description": "Program status"
+    },
+    "is_ai_generated": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this is an AI-generated program"
+    },
+    "coach_earnings": {
+      "type": "number",
+      "description": "Coach earnings after 15% commission"
+    },
+    "platform_commission": {
+      "type": "number",
+      "description": "Platform commission (15%)"
+    }
+  },
+  "required": [
+    "coach_id",
+    "client_id",
+    "name",
+    "start_date",
+    "end_date",
+    "price"
+  ]
+}

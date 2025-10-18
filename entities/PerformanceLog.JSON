@@ -1,0 +1,59 @@
+{
+  "name": "PerformanceLog",
+  "type": "object",
+  "properties": {
+    "exercise_id": {
+      "type": "string",
+      "description": "ID of the exercise"
+    },
+    "workout_id": {
+      "type": "string",
+      "description": "ID of the workout"
+    },
+    "client_id": {
+      "type": "string",
+      "description": "ID of the client"
+    },
+    "time_in": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When client started the workout"
+    },
+    "time_out": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When client finished the workout"
+    },
+    "set_data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "set_number": {
+            "type": "number"
+          },
+          "actual_reps": {
+            "type": "number"
+          },
+          "actual_weight": {
+            "type": "number"
+          }
+        }
+      },
+      "description": "Performance data for each set"
+    },
+    "client_notes": {
+      "type": "string",
+      "description": "Client feedback or notes"
+    },
+    "difficulty_rating": {
+      "type": "number",
+      "description": "How difficult the exercise was (1-5)"
+    }
+  },
+  "required": [
+    "exercise_id",
+    "workout_id",
+    "client_id"
+  ]
+}

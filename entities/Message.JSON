@@ -1,0 +1,32 @@
+{
+  "name": "Message",
+  "type": "object",
+  "properties": {
+    "sender_id": {
+      "type": "string",
+      "description": "ID of the sender"
+    },
+    "receiver_id": {
+      "type": "string",
+      "description": "ID of the receiver"
+    },
+    "program_id": {
+      "type": "string",
+      "description": "Related program ID"
+    },
+    "content": {
+      "type": "string",
+      "description": "Message content"
+    },
+    "read": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether message has been read"
+    }
+  },
+  "required": [
+    "sender_id",
+    "receiver_id",
+    "content"
+  ]
+}

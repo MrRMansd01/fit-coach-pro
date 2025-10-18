@@ -1,0 +1,37 @@
+{
+  "name": "Workout",
+  "type": "object",
+  "properties": {
+    "program_id": {
+      "type": "string",
+      "description": "ID of the training program"
+    },
+    "name": {
+      "type": "string",
+      "description": "Workout name"
+    },
+    "scheduled_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Scheduled date for this workout"
+    },
+    "day_number": {
+      "type": "number",
+      "description": "Day number in the program"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Coach notes for the workout"
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the workout has been completed"
+    }
+  },
+  "required": [
+    "program_id",
+    "name",
+    "scheduled_date"
+  ]
+}
